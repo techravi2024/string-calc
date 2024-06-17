@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="./src/calculator_ui.js" defer></script>
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator">
+      <h1>String Calculator</h1>
+      <div class="inputs">
+        <input type="text" id="numbers" placeholder="Enter numbers (e.g., 1,2,3)">
+      </div>
+      <div class="operations">
+        <button onclick="performOperation('add')">Add</button>
+        <button onclick="performOperation('subtract')">Subtract</button>
+        <button onclick="performOperation('multiply')">Multiply</button>
+        <button onclick="performOperation('divide')">Divide</button>
+        <button onclick="performOperation('modulus')">Modulus</button>
+        <button onclick="performOperation('exponentiate')">Exponentiate</button>
+        <button onclick="performOperation('average')">Average</button>
+      </div>
+      <div class="result">
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
